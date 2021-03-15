@@ -17,6 +17,7 @@ $.ajaxPrefilter(function (options) {
     //     return;
     // }
     // console.log(options); 得到的是一个对象
+    // 手动添加路径前缀
     options.url = baseURL + options.url
     // 2.身份认证
     if (options.url.indexOf('/my/' != -1)) {

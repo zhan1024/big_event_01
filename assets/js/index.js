@@ -4,25 +4,28 @@ $(function () {
     getUserInfo();
 
 });
-//退出
+//2退出
 let layer = layui.layer;
 $("#btnLogout").on('click', function () {
+    // 弹窗,销毁taken,l;路劲跳转
     // 框架提供的询问框
     layer.confirm('是否确认退出', { icon: 3, title: '提示' }, function (index) {
         //do something
         // 1.清空本地token
         localStorage.removeItem('token')
         //页面跳转
-        location.href = "login.html"
+        location.href = "/login.html"
         // 关闭询问框
         layer.close(index);
     });
 })
 
 
+// 退出函数
 //获取用于信息(封装到入口函数的外面了)
 //原因,后面其他的页面要调用
 function getUserInfo() {
+
     //发送ajax
     $.ajax({
         //   type:'',
