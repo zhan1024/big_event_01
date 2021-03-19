@@ -54,6 +54,7 @@ $(window).on('load', function () {
                 width: 100,
                 height: 100,
             })
+
             .toDataURL('image/png')
         // console.log(dataURL);
         // console.log(typeof dataURL);

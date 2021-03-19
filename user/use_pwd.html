@@ -24,10 +24,10 @@
 
                 <!-- 旧密码 -->
                 <div class="layui-form-item">
-                    <label class="layui-form-label">旧密码</label>
+                    <label class="layui-form-label">原密码</label>
                     <div class="layui-input-block">
-                        <input value="1" type="text" name="oldPwd" required lay-verify="required||pwd"
-                            placeholder="请输入旧密码" autocomplete="off" class="layui-input">
+                        <input value="123456" type="text" name="oldPwd" required lay-verify="required||pwd"
+                            placeholder="请输入原密码" autocomplete="off" class="layui-input">
                     </div>
                 </div>
                 <!-- 新密码 -->
@@ -47,9 +47,11 @@
                     </div>
                 </div>
                 <!-- 按钮 -->
-                <div class="layui-input-block">
-                    <button class="layui-btn" lay-submit lay-filter="formDemo">修改密码</button>
-                    <button type="reset" id="btnReset" class="layui-btn layui-btn-primary">重置</button>
+                <div class="layui-form-item">
+                    <div class="layui-input-block">
+                        <button class="layui-btn" lay-submit lay-filter="formDemo">修改密码</button>
+                        <button type="reset" id="btnReset" class="layui-btn layui-btn-primary">重置</button>
+                    </div>
                 </div>
             </form>
         </div>

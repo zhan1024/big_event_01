@@ -17,9 +17,9 @@ $(function () {
             }
         },
         //1.3;两次新密码必须相同
-        rePwd: function () {
+        rePwd: function (value) {
             //value是再次输入的西密码,新密码需要重新获取
-            if (value !== $("[name==newPwd]").val()) {
+            if (value != $("[name=newPwd]").val()) {
                 return "两次新密码输入不一样"
             }
         }
