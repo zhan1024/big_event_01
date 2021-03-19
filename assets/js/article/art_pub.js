@@ -121,7 +121,7 @@ $(function () {
                 // 发布文章成功后，跳转到文章列表页面
                 // location.href = '/article/art_list.html'
                 setTimeout(function () {
-                    window.parent.document.querySelector('#pub_list').click()
+                    window.parent.document.querySelector('#art_list').click()
                 }, 1500)
 
             }
